@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN-" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/asgmt.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>topic</title>
+
+<!-- InstanceParam name="asgmtNumber" type="text" value="6" -->
+
+<!-- template parameters -->
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+<!--
+body {
+	background-color: #FFFFFF;
+	font-size: 18px;
+	color: #111100;
+	font-family: Cambria, "Times New Roman", serif;
+}
+h1 {
+	font-size: 32px;
+	color: #111100;
+	font-family: Cambria, "Times New Roman", serif;
+}
+h2 {
+	font-size: 24px;
+	color: #111100;
+	font-family: Cambria, "Times New Roman", serif;
+}
+h3 {
+	font-size: 20px;
+	color: #111100;
+	font-family: Cambria, "Times New Roman", serif;
+}
+table {
+	background-color: #FFFBF4;
+}
+th {
+	font-weight: normal;
+	font-style: italic;
+	}
+a:link {
+	color: #000066;
+}
+a:visited {
+	color: #660033;
+}
+a:hover {
+	color: #CC0000;
+}
+.calendarDate {
+	text-align: center;
+	vertical-align: middle;
+}
+.code {
+	font-family: Consolas, "Courier New", mon;
+	font-size: 12px;
+}
+.codeInText {
+	font-family: Consolas, "Courier New", mon;
+	font-size: 18px;
+	color: #111100;
+}
+.codeBlue {
+	color: #000099;
+	font-family: Consolas, "Courier New", mono;
+	font-size: 12px;
+}
+.headerText {
+	font-size: 24px;
+	color: #111100;
+	text-decoration: underline;
+}
+.headerText2 {
+	font-size: 18px;
+	color: #111100;
+	text-decoration: underline;
+	font-weight: normal;
+}
+.headerText3 {
+	font-size: 16px;
+	color: #111100;
+	text-decoration: underline;
+}
+.pageHeaderText {
+	font-size: 36px;
+	color: #111100;
+}
+.red {
+  color: #FF0000
+}
+-->
+</style>
+</head>
+
+<body>
+
+
+	<h1><u>
+		Assignment 6:
+		<!-- InstanceBeginEditable name="topic" -->Build a BMI Calculator<!-- InstanceEndEditable -->
+	</u></h1>
+
+
+<!-- InstanceBeginEditable name="instructions" -->
+<h2>Task  Description:</h2>
+<p>You will be building a Body Mass  Index calculator like this:</p>
+<blockquote>
+	<p><img src="asgmt06_clip_image001.png" alt="BMI GUI calculator app" width="242" height="197" /></p>
+</blockquote>
+<p>You will build it using the <strong>pcc.gui</strong> package.</p>
+<h2>User Interface Items</h2>
+<p>The top three text fields ('Height (ft)', 'Height (in)', 'Weight (lbs)') are for  user input. They can be clicked on and typed into (i.e. they are &ldquo;enabled&rdquo;).  The fourth one ('BMI')  is for showing the result of the Body Mass Index calculation. It cannot be  typed into (i.e. it is &ldquo;disabled&rdquo;), which is indicated by its gray background.  The text in it, however, can be selected and copied.</p>
+<p>It is <em>extremely important</em> (meaning that you will lose significant points  on your grade) for you to name your user interface items <em>exactly</em> as shown in the images. The required names are (in order,  starting from the top):</p>
+<blockquote>
+	<p><span class="codeInText">Height  (ft)<br />
+		Height  (in)<br />
+		Weight  (lbs)<br />
+		BMI<br />
+		Compute<br />
+		Quit</span><br clear="all" />
+</p></blockquote>
+<p>Note the presence of <em>one</em> space before the left parenthesis in the first three names.</p>
+<h2>User Interface Behavior</h2>
+<p>The [Compute]<strong> </strong>button should only be enabled when there is valid numerical input  in the three input text fields: 'Height  (ft)', 'Height (in)',  'Weight (lbs)'.  Otherwise it should be disabled.</p>
+<blockquote>
+	<p><img src="asgmt06_clip_image002.png" alt="BMI GUI calculator app showing disabled Compute button" width="242" height="197" /></p>
+</blockquote>
+<p>When the [Compute] button is  hilited, hitting Enter/Return on the keyboard should have the same effect as  clicking the [Compute] button with the mouse.</p>
+<blockquote>
+	<p><img src="asgmt06_clip_image003.png" alt="BMI GUI calculator app showing Compute button hilited to indicate the button has GUI focus" width="242" height="197" /></p>
+</blockquote>
+<p>Typing into any of the three input  text fields should cause the BMI text field to become empty.</p>
+<p>The formula for computing the Body Mass Index is:</p>
+<blockquote>
+	<p class="codeInText">bmi = 703 * weightInPounds / heightInInches<sup>2</sup></p>
+</blockquote>
+<p>(Note that Python has an exponentiation operator, <span class="codeInText">**</span>. You Can write x<sup>2</sup> in Python like this: <span class="codeInText">x**2</span>)</p>
+<p>The BMI text field should display  the result of the calculation with two digits to the right of the decimal  point. You should use Python&rsquo;s format string feature to accomplish this:</p>
+<blockquote>
+	<p><span class="codeInText">bmiStr = f'{bmi:.2f}'</span></p>
+</blockquote>
+<!-- InstanceEndEditable -->
+<p>Start with <a href="https://repl.it/@mtrigoboff/Assignment-06" target="_blank">https://repl.it/@mtrigoboff/Assignment-06.
+</a></p>
+<p>When you are done, upload the URL to your repl to Desire2Learn.</p>
+
+</body>
+<!-- InstanceEnd --></html>

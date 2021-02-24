@@ -1,0 +1,21 @@
+# ignore all files
+*
+
+# unignore all dirs
+!*/
+
+# ignore dirs
+**/_notes/
+**/files/
+
+# unignore desired files
+!**/*.c
+!**/*.h
+!**/*.dwt
+!**/*.htm
+!**/*.html
+!**/*.lbi
+!**/*.txt
+
+# unignore .gitignore
+!.gitignore

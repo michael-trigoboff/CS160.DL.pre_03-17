@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN-" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/asgmt.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>topic</title>
+
+<!-- InstanceParam name="asgmtNumber" type="text" value="5" -->
+
+<!-- template parameters -->
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+<!--
+body {
+	background-color: #FFFFFF;
+	font-size: 18px;
+	color: #111100;
+	font-family: Cambria, "Times New Roman", serif;
+}
+h1 {
+	font-size: 32px;
+	color: #111100;
+	font-family: Cambria, "Times New Roman", serif;
+}
+h2 {
+	font-size: 24px;
+	color: #111100;
+	font-family: Cambria, "Times New Roman", serif;
+}
+h3 {
+	font-size: 20px;
+	color: #111100;
+	font-family: Cambria, "Times New Roman", serif;
+}
+table {
+	background-color: #FFFBF4;
+}
+th {
+	font-weight: normal;
+	font-style: italic;
+	}
+a:link {
+	color: #000066;
+}
+a:visited {
+	color: #660033;
+}
+a:hover {
+	color: #CC0000;
+}
+.calendarDate {
+	text-align: center;
+	vertical-align: middle;
+}
+.code {
+	font-family: Consolas, "Courier New", mon;
+	font-size: 12px;
+}
+.codeInText {
+	font-family: Consolas, "Courier New", mon;
+	font-size: 18px;
+	color: #111100;
+}
+.codeBlue {
+	color: #000099;
+	font-family: Consolas, "Courier New", mono;
+	font-size: 12px;
+}
+.headerText {
+	font-size: 24px;
+	color: #111100;
+	text-decoration: underline;
+}
+.headerText2 {
+	font-size: 18px;
+	color: #111100;
+	text-decoration: underline;
+	font-weight: normal;
+}
+.headerText3 {
+	font-size: 16px;
+	color: #111100;
+	text-decoration: underline;
+}
+.pageHeaderText {
+	font-size: 36px;
+	color: #111100;
+}
+.red {
+  color: #FF0000
+}
+-->
+</style>
+</head>
+
+<body>
+
+
+	<h1><u>
+		Assignment 5:
+		<!-- InstanceBeginEditable name="topic" -->Overlapping Rectangles<!-- InstanceEndEditable -->
+	</u></h1>
+
+
+<!-- InstanceBeginEditable name="instructions" -->
+		<p>Create a Python turtle graphics window. When you click the mouse in an empty space in that window, your code should draw a rectangle. The features of the rectangle should be randomly chosen like this:</p>
+		<blockquote>
+			<pre class="codeInText">width = r.randint(100, 200)
+height = r.randint(100, 200)
+penWidth = r.randint(1, 8)
+outlineColor = r.choice(outlineColors)
+fillColor = r.choice(fillColors)</pre>
+		</blockquote>
+		<p>The variables <span class="codeInText"><strong>outlineColors</strong></span> and <span class="codeInText"><strong>fillColors</strong></span> should be lists containing the names of colors coded as Python strings. You can use any colors you like from the <strong>Python Turtle Graphics Colors</strong> page in this course. Each list should contain at least five colors.</p>
+		<p>The rectangle should be centered around where the mouse was clicked. For instance, if the mouse was clicked at x&nbsp;==&nbsp;300, y&nbsp;==&nbsp;250, and the randomly chosen width and height were width&nbsp;==&nbsp;180, height&nbsp;==&nbsp;120, the corners of the rectangle would be:</p>
+		<blockquote>
+			<table border="1" cellpadding="2">
+				<tr>
+					<th width="122" align="left"><strong>corner</strong></th>
+					<th width="58" align="center"><strong>x</strong></th>
+					<th width="82" align="center"><strong>y</strong></th>
+				</tr>
+				<tr>
+					<td align="left">bottom left</td>
+					<td align="center">210</td>
+					<td align="center">190</td>
+				</tr>
+				<tr>
+					<td align="left">bottom right</td>
+					<td align="center">390</td>
+					<td align="center">190</td>
+				</tr>
+				<tr>
+					<td align="left">top left</td>
+					<td align="center">210</td>
+					<td align="center">310</td>
+				</tr>
+				<tr>
+					<td align="left">top right</td>
+					<td align="center">390</td>
+					<td align="center">310</td>
+				</tr>
+			</table>
+		</blockquote>
+		<p>If you click a few times in empty space, you should get something like this:</p>
+		<blockquote>
+			<p><img src="turtleWn.png" width="522" height="595" alt="turtle graphics window showing overlapping rectangles"/></p>
+		</blockquote>
+		<p>If you click on a rectangle, it should repaint itself. This will look like the rectangle has been &quot;brought to the top,&quot; above all  the rectangles that overlap it. In other words, the rectangles will behave like the windows in a graphical user interface.</p>
+		<p>Finally, if you type an <span class="codeInText"><strong>e</strong></span> (for <strong><u>e</u></strong>rase), your code should erase all the rectangles. It will do this by painting all of them  with outline color and fill color set the same as the background color of the window.</p>
+		<p>For your code to do this, you will need to keep a list of all the current rectangles, and empty that list when you have erased them.</p>
+		<p>This will all be demonstrated in class.</p>
+		<p><!-- #BeginLibraryItem "/Library/turtle graphics docs.lbi" -->
+You can use any of the turtle graphics commands described in the&nbsp;<a href="https://docs.python.org/3/library/turtle.html" target="_blank">Python Turtle Graphics Documentation.</a><!-- #EndLibraryItem --></p>
+	<!-- InstanceEndEditable -->
+<p>Start with <a href="https://repl.it/@mtrigoboff/Assignment-05" target="_blank">https://repl.it/@mtrigoboff/Assignment-05.
+</a></p>
+<p>When you are done, upload the URL to your repl to Desire2Learn.</p>
+
+</body>
+<!-- InstanceEnd --></html>
