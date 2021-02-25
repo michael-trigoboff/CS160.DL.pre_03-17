@@ -14,8 +14,10 @@
 <!-- InstanceParam name="linkVisitedColor" type="text" value="#660033" -->
 <!-- InstanceParam name="tableBgColor" type="text" value="#FFFBF4" -->
 <!-- InstanceParam name="textColor" type="text" value="#111100" -->
-<!-- InstanceParam name="topicName" type="text" value="topic" -->
-<!-- InstanceParam name="topicPrefix" type="text" value="Assignment @@(asgmtNumber)@@:" -->
+<!-- InstanceParam name="topicName" type="text"
+		value="Assignment @@(asgmtNumber)@@ Instructions" -->
+<!-- InstanceParam name="topicPrefix" type="text"
+		value="Assignment @@(asgmtNumber)@@:" -->
 <!-- InstanceParam name="displayTopic" type="boolean" value="true" -->
 <style type="text/css">
 <!--
@@ -113,8 +115,8 @@ a:hover {
 <!-- TemplateBeginEditable name="instructions" -->
 <p>instructions</p>
 <!-- TemplateEndEditable -->
-<p>Start with <a href="https://repl.it/@mtrigoboff/Assignment-0@@(asgmtNumber)@@" target="_blank">https://repl.it/@mtrigoboff/Assignment-0@@(asgmtNumber)@@.
-</a></p>
+<p>Start with <a href="https://repl.it/@mtrigoboff/Assignment-0@@(asgmtNumber)@@" target="_blank">https://repl.it/@mtrigoboff/Assignment-0@@(asgmtNumber)@@</a>.
+</p>
 <p>When you are done, upload the URL to your repl to Desire2Learn.</p>
 <!-- InstanceEndEditable -->
 </body>
